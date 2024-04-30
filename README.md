@@ -4,20 +4,30 @@ Most of AstroNvim is stock including the leader key `space`
 
 I have a few pre-installed packages with custom commands:
 
-Markdown Preview (opens a MarkDown preview of the current file in the browser).
+##### Markdown Preview
+
+This opens a MarkDown preview of the current file in the browser.
 
 You may need to run this command if it doesn't work!
 ```
 :call mkdp#util#install()
 ```
 
-and some minor fixes for working with clangd.
+##### Tabnine
+Note: This is __DISABLED__ by default. you remove the top line of `tabnine.lua` to enable tabninie.
 
-**NOTE:** This is for AstroNvim v4+
+Default key maps:
 
-A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+Accept suggestions `<ctrl-s>`
+
+Reject suggestions `<ctrl-j>`
+
+##### Other Changes
+1. some minor fixes for working with clangd.
 
 ## 🛠️ Installation
+
+**NOTE:** This is for AstroNvim v4+
 
 ##### Install Nerd fonts 
 
@@ -56,7 +66,7 @@ You can also just clone this repository directly if you do not want to track you
 #### Clone the repository
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
+git clone https://github.com/OpticSeven/astrovim-config.git ~/.config/nvim
 ```
 
 #### Start Neovim
