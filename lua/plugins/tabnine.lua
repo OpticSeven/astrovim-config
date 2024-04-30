@@ -1,4 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 --- Tabnine plugin
 ---@type LazySpec
 return { 'codota/tabnine-nvim',

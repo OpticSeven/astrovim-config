@@ -1,6 +1,8 @@
 # Nik's AstroNvim Template
 
-Most of AstroNvim is stock including the leader key `space`
+Most of this NeoVim configuration is stock AstroNvim including the leader key `space`
+
+https://astronvim.com/
 
 I have a few pre-installed packages with custom commands:
 
@@ -8,13 +10,19 @@ I have a few pre-installed packages with custom commands:
 
 This opens a MarkDown preview of the current file in the browser.
 
+Commands:
+
+`:MardownPreview` Launch the markdown preview in your browser.
+
+`:MardownPreviewStop` Stops the markdown preview in your browser.
+
 You may need to run this command if it doesn't work!
 ```
 :call mkdp#util#install()
 ```
 
 ##### Tabnine
-Note: This is __DISABLED__ by default. you remove the top line of `tabnine.lua` to enable tabninie.
+Note: This is __DISABLED__ by default. Remove the top line of `tabnine.lua` to enable tabnine.
 
 Default key maps:
 
