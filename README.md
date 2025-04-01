@@ -53,8 +53,21 @@ fc-cache -fv
 
 #### Install NeoVim
 ```
-sudo snap install nvim --classic
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+mkdir -p /opt/nvim
+mv nvim-linux-x86_64.appimage /opt/nvim/nvim
 ```
+Add this line to your .bashrc or equivalent:
+```
+export PATH="$PATH:/opt/nvim/"
+```
+You will need to restart your shell or run:
+```
+source ~.bashrc
+```
+To have the command `nvim` work globally.
 
 #### Make a backup of your current nvim and shared folder (Optional)
 
